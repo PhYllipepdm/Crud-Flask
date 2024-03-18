@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+    background-color: #222222;
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+}
+
+nav.menu-lateral{
+    width: 70px;
+    height: 100%;
+    background-color: #000;
+    padding: 40px 0 40px 0;
+    box-shadow: 3px 0 0 #1A5276;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: .5s;
+}
+
+nav.menu-lateral:hover{
+    width: 300px;
+}
+
+.btn-expandir{
+    width: 100%;
+    padding-left: 10px;
+}
+
+.btn-expandir > i{
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+ul{
+    height: 100%;
+    list-style: none;
+    padding: 0 0 0 8px;
+}
+
+ul li.item-menu:hover{
+    background-color: #1A5276;
+}
+ul li.item-menu{
+    transition: 0.5s;
+}
+
+ul li.item-menu a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 0;
+    display: flex;
+    margin-bottom: 20px;
+    line-height: 40px;
+}
+
+ul li.item-menu a .txt-link{
+    margin-left: 40px;
+}
+
+ul li.item-menu a .icon > i{
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+.main{
+    background-color: #000;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.num-clientes{
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+}
+
+.ativos{
+    width: 400px;
+    height: 200px;
+    border-radius: 10px;
+    background-color: rgb(90, 153, 27);
+    margin-top: 50px;
+    text-align: center;
+    color: #fff;
+}
+
+.vencidos{
+    width: 400px;
+    height: 200px;
+    border-radius: 10px;
+    background-color: rgb(143, 20, 44);
+    margin-top: 50px;
+    text-align: center;
+    color: #fff;
+}
+
+.ativos i{
+    font-size: 30px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+.vencidos i{
+    font-size: 30px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center
+}
+
+.button-container{
+   width: 80%;
+   text-align: start;
+    margin-top: 80px;
+}
+
+#add{
+    font-size: 20px;
+    padding: 10px 20px;
+    background-color: #1A5276;
+    color: #fff;
+    border-radius: 8px;
+    border: none;
+}
