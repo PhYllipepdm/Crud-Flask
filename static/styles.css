@@ -24,7 +24,7 @@ nav.menu-lateral{
     transition: .5s;
 }
 
-nav.menu-lateral:hover{
+nav.menu-lateral.expandir{
     width: 300px;
 }
 
@@ -52,6 +52,10 @@ ul li.item-menu{
     transition: 0.5s;
 }
 
+ul li.ativo{
+    background-color: #1A5276;
+}
+
 ul li.item-menu a{
     color: #fff;
     text-decoration: none;
@@ -65,6 +69,7 @@ ul li.item-menu a{
 ul li.item-menu a .txt-link{
     margin-left: 40px;
 }
+
 
 ul li.item-menu a .icon > i{
     font-size: 30px;
@@ -132,4 +137,151 @@ ul li.item-menu a .icon > i{
     color: #fff;
     border-radius: 8px;
     border: none;
+}
+
+#add:hover{
+    background-color: #256891;
+}
+
+.table{
+    width: 80%;
+}
+table {
+    width: 100%;
+    word-break: break-word;
+    border-spacing: 10px;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+thead {
+    border-radius: 10rem;
+    background-color: #222222;
+    padding: 10px;
+}
+
+tr {
+    border-bottom: 1px solid #256891;
+}
+
+
+thead tr th {
+    color: #fff;
+    text-align: start;
+    padding: 5px;
+    margin-bottom: 50px;
+}
+
+
+thead tr th.acao {
+    width: 100px;
+    text-align: center;
+}
+
+tbody tr td {
+    max-width: 50px;
+    vertical-align: text-top;
+    padding: 6px;
+    color: #fff;
+    background-color: #1A5276;
+}
+
+tbody tr:hover{
+    background-color: #222222;
+    transition: 0.4s;
+}
+
+tbody tr {
+    margin-bottom: 50px;
+}
+
+tbody button{
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#edit{
+    background-color: gold;
+    padding: 10px;
+    font-weight: 700;
+    margin-right: 10px;
+}
+
+#remove{
+    background-color: red;
+    padding: 10px;
+    color: #fff;
+    font-weight: 700;
+    margin-right: 10px;
+}
+
+.janela-modal{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: #0000007e;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+.janela-modal.abrir{
+    display: flex;
+}
+
+.modal{
+    width: 60%;
+    min-width: 450px;
+    min-height: 200px;
+    background-color: #22222288;
+    backdrop-filter: blur(10px);
+    padding: 50px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+    transition: 0.5s;
+    font-weight: bold;
+}
+
+.modal > input{
+    width: 60%;
+    margin: 20px;
+    border-radius: 5px; 
+    border: none;
+    padding: 5px;
+}
+
+.modal > label{
+    padding-right: 420px;
+    color: #1A5276;
+}
+
+.fechar{
+    position: absolute;
+    top: -10px; ;
+    right: -10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 0;
+    background-color: red;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#btnSalvar{
+    background-color: #1A5276;
+    color: #fff;
+    border: none;
+    width: 20%;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: larger;
 }
