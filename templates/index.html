@@ -72,12 +72,12 @@
         <div class="ativos">
           <i class="bi bi-people"></i>
           <p>Clientes Ativos</p>
-          <p style="font-size: 50px; margin: 0;">0</p>
+          <p style="font-size: 50px; margin: 0;">{{ clientes_ativos }}</p>
         </div>      
         <div class="vencidos">
           <i class="bi bi-people"></i>
           <p>Clientes Vencidos</p>
-          <p style="font-size: 50px; margin: 0;">0</p>
+          <p style="font-size: 50px; margin: 0;">{{ clientes_vencidos }}</p>
         </div>
 
       </div>
@@ -108,8 +108,8 @@
                   <td>{{ cliente[3] }}</td>
                   <td>{{ cliente[4] }}</td>
                   <td>{{ cliente[5] }}</td>
-                  <td><button id="edit">Editar</button></td>
-                  <td><button id="remove">Excluir</button></td>
+                  <td><a href="/editar_cliente/{{ cliente[0] }}"><button id="edit">Editar</button></a></td>
+                  <td><a href="/excluir_cliente/{{ cliente[0] }}"><button id="remove">Excluir</button></a></td>
               </tr>
               {% endfor %}
             </tbody>
